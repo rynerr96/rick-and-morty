@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+body {
+  background-color: rgb(22, 1, 27);
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  background-image: url(../rickandamorty3.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+  display: flex;
+  min-width: 90%;
+  min-height: 200px;
+  left: 0px;
+  top: 0px;
+}
+
+.div-letras {
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.img-letras {
+  display: grid;
+  width: 60%;
+  place-items: center;
+  margin-top: -4rem;
+}
+
+.contenedor-padre {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.input {
+  display: grid;
+  place-items: center;
+  margin-left: -9rem;
+}
+
+.input-text {
+  width: 220px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: solid #39ff14;
+  color: rgba(252, 3, 243, 0.621);
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Roboto Mono', monospace;
+
+
+}
+
+.button {
+  display: grid;
+  place-items: center;
+  margin-left: 15rem;
+  margin-top: -3.5rem;
+  margin-bottom: 0;
+
+}
+
+button {
+  border-radius: 40px;
+  width: 140px;
+  height: 50px;
+  background-color: #37ff149c;
+  border: none;
+  box-shadow: 2px 2px 2px 2px rgba(252, 3, 243, 0.621);
+}
+button :hover {
+  border-radius: 40px;
+  width: 140px;
+  height: 50px;
+  background-color: rgba(252, 3, 243, 0.621);
+  border: none;
+  box-shadow: 2px 2px 2px 2px #37ff149c;
+}
+
+.contenedor-hijo {
+  display: grid;
+  place-items: center;
+  font-family: 'Roboto Mono', monospace;
+
+}
+.barra-lista{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.ul-main {
+  
+  color: #f5deb3;
+  font-size: 15px;
+  margin-top: 3rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  align-items: center;
+  list-style: none;
+  width: 80%;
+  height: 100px;
+  background-color: rgba(253, 1, 177, 0.589);
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px #39ff14;
+}
+.name{
+  color: white;
+  text-align: center ;
+
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 7rem;
+  margin-top: 3rem;
+}
+
+.card-characters {
+  color: aliceblue;
+  display: grid;
+  place-items: center;
+  border-radius: 30px 30px;
+  box-shadow: 4px 4px 4px 4px rgba(252, 3, 243, 0.621);
+  background-color: rgba(10, 3, 34, 0.598);
+  width: 350px;
+  height: 400px;
+  text-align: center;
+
+}
+
+.alive {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px #39ff14;
+}
+
+.dead {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px #f50404;
+}
+
+.unknow {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 4px 4px #545353;
+}
+
+.Btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+
+.Btn-Numbers{
+  display: grid;
+  width: 50px;
+  border-radius: 50%;
+  align-items: center;
+ 
+
+
+}
+
+
+
+
+@media screen and (min-width: 600px) {
+  .input {
+    width: 100%;
+  }
+
+  .input-text {
+    width: 50%;
+      
+  }
+  
+  .button {
+    
+    margin-left: 20rem;
+    
+  
+  }
+
+  .main {
+
+    min-height: 344px;
+     
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+  .name{
+    font-size: 45px;
+  }
+
+ .ul-main {
+   
+  
+  font-size: 30px;
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+  .input-text {
+    width: 30%;
+      
+  }
+
+
+
+}
